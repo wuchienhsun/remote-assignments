@@ -1,0 +1,188 @@
+body {
+  margin: 0px;
+}
+
+nav {
+  background-color: #909497;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nar-bar-l{
+  display: flex;
+  align-items:center;
+  margin-left: 3%;
+
+}
+
+
+.nar-bar-m{
+  flex: auto;
+
+}
+.nav-bar-r {
+  display: flex;
+  align-items:center;
+  margin-right: 10px;
+}
+.ul-1 {
+  list-style-type: none;
+  display: flex;
+}
+
+ul>.item{
+  flex: none;
+  width: 50px;
+  margin: 5px;
+}
+
+
+.burger-menu {
+  width: 100%;
+  background-color: #909497;
+  display: none;
+
+}
+
+.burger-menu>ul {
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+
+}
+
+.burger-menu>ul li {
+
+  width: 95%;
+  margin: 0px;
+  height: 40px;
+}
+
+
+.first {
+    display: flex;
+    background-color: lightblue;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items:center;
+
+
+
+}
+
+.f_h1 {
+    flex: none;
+    text-align: center;
+}
+
+.section-title{
+  text-align: center;
+}
+
+.content {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  text-align: center;
+  flex: none;
+  margin: 10px;
+  width: 580px;
+  height: 200px;
+  background-color: #eeeeee;
+}
+
+.button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items:center;
+
+}
+.button>div {
+  flex: none;
+  padding-top: 13px;
+  width: 120px;
+  height: 28px;
+  background: lightblue;
+}
+/*
+ Layout when screen width > 800px and < 1200px
+
+ Layout when screen width > 500px and < 800px
+
+ Layout when screen width < 500px
+*/
+@media(min-width:1200px){
+ .box{
+   width:  600px;
+ }
+}
+
+@media (max-width:1200px) {
+  .box{
+    width: 45%;
+  }
+}
+
+@media (max-width:800px) {
+  /*Menu Items in the navigator should be replaced by a menu trigger icon.*/
+  .box{
+    width: 45%;
+  }
+
+  .burger-nav ul li {
+    display: none;
+  }
+
+  div .nar-bar-r {
+      margin-right: 3%;
+  }
+
+  .burger-nav {
+    margin-right: 45px;
+
+    text-align: center;
+    display: block;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    background: url(img/menu-three-horizontal-lines-symbol.png) no-repeat 98% center;
+  }
+
+  /*
+  ul li {
+    display: none;
+  }
+  */
+  .burger-menu {
+    display: none;
+  }
+
+  }
+
+
+@media (max-width:500px) {
+    .box {
+      width: 95%;
+      margin: 10px;
+    }
+    .burger-nav {
+      display: block;
+      height: 40px;
+      width: 40px;
+      background: url(img/menu-three-horizontal-lines-symbol.png) no-repeat 98% center;
+    }
+
+
+    .burger-nav:hover ul li {
+        display: block;
+    }
+
+}
