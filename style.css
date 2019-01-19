@@ -160,6 +160,9 @@ ul>.item{
   .box{
     width: 45%;
   }
+  .ul-1 {
+    display: none;
+  }
 
   .burger-nav ul li {
     display: none;
@@ -194,6 +197,9 @@ ul>.item{
 
 
 @media (max-width:500px) {
+  .ul-1 {
+    display: none;
+  }
     .box {
       width: 95%;
       margin: 10px;
