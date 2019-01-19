@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav-main">
         <div class="nar-bar-l">
           <div class="logo">
             <img class="" src="" alt="">
@@ -19,7 +19,7 @@
 
           </div>
         <div class="nav-bar-r">
-          <a class="burger-nav">
+          <a class="burger-nav" onclick="toggleNav()">
             <ul class="ul-1">
               <li class="item">item1</li>
               <li class="item">item2</li>
@@ -38,9 +38,17 @@
         </ul>
       </div>
     </header>
-
+    <aside class="nav-sidebar">
+      <div  style="padding-left: 90%;" onclick="toggleNav()">X</div>
+      <ul>
+        <li class="item">item1</li>
+        <li class="item">item2</li>
+        <li class="item">item3</li>
+        <li class="item">item4</li>
+      </ul>
+    </aside>
     <div class="first">
-      <h1 class="f_h1">welcome Message</h1>
+      <h1 class="f_h1" onclick="this.innerHTML='have a good time'">welcome Message</h1>
     </div>
     <div class="section-title">
       <h2>Section Title</h2>
@@ -52,9 +60,17 @@
       <div class="box">content box4</div>
     </div>
 
-    <div class="button">
+    <div class="button" onclick="displaybox()">
       <div class="">Call to Action</div>
     </div>
+    <div class="content" id="content2">
+      <div class="box">content box5</div>
+      <div class="box">content box6</div>
+      <div class="box">content box7</div>
+      <div class="box">content box8</div>
+    </div>
+<script type="text/javascript" src="js/html.js">
 
+</script>
   </body>
 </html>

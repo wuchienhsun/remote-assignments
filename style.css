@@ -3,6 +3,8 @@ body {
 }
 
 nav {
+
+  top: 0;
   background-color: #909497;
   display: flex;
   margin: 0;
@@ -112,6 +114,25 @@ ul>.item{
   height: 28px;
   background: lightblue;
 }
+
+#content2 {
+  display: none;
+}
+
+.nav-sidebar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  visibility: hidden;
+
+}
+
+.nav-sidebar ul li {
+  list-style-type: none;
+}
 /*
  Layout when screen width > 800px and < 1200px
 
@@ -169,6 +190,7 @@ ul>.item{
   }
 
   }
+
 
 
 @media (max-width:500px) {
