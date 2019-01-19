@@ -1,10 +1,10 @@
 //A_1
+console.log("A_1");
 var sort = [];
-console.log(
 function sortNumber(a,b)
 {
 return a - b
-},
+}
 
 function Max(...num) {
 	var sortednum = num.sort(sortNumber);
@@ -17,7 +17,7 @@ function Max(...num) {
 	console.log(Max(100,500,7000, 324324,222));
 
 }
-);
+console.log("console.log(Max(100,500,7000, 324324,222));");
 
 console.log(Max(100,500,7000, 324324,222));
 
@@ -51,9 +51,10 @@ var cal = {
 
 
 //A_3
-
+console.log("A_3");
 var a
 function avg(data){
+	console.log("return (a.products[0].price+a.products[1].price+a.products[2].price)/3;");
 	return (a.products[0].price+a.products[1].price+a.products[2].price)/3;
 }
 
@@ -74,3 +75,4 @@ avg(a = {
 		}
 	]
 });
+
