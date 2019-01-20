@@ -1,29 +1,7 @@
 //A_1
 console.log("----------------------------------------");
 console.log("A_1");
-/*
-var sort = [];
-function sortNumber(a,b)
-{
-return a - b
-}
 
-function Max(...num) {
-	var sortednum = num.sort(sortNumber);
-  /*console.log(sortednum);
-  console.log(num.length);
-  for (var i = 0; i <num.length; i++) {
-    sort = sortednum.pop();
-    return sort;
-  }
-}
-console.log("console.log(Max(100,500,7000, 324324,222));");
-
-console.log(Max(100,500,7000, 324324,222));
-
-console.log("console.log(Max(23423,111111,555555,2302130123));");
-console.log(Max(23423,111111,555555,2302130123));
-*/
 function max(num) {
 	var maxf = num[0];
 for(var i = 1 ; i <num.length; i++) {
@@ -47,15 +25,7 @@ console.log("----------------------------------------");
 
 
 
-// A_2
-// var person = {
-//   firstName: "John",
-//   lastName : "Doe",
-//   id       : 5566,
-//   fullName : function() {
-//     return this.firstName + " " + this.lastName;
-//   }
-// };
+
 
 console.log("A_2");
 function calculate(args) {
@@ -77,28 +47,7 @@ var text = {
   n2: 3
 };
 console.log(calculate(text));
-/*
-var text2 = {
-	op: 0,
-	n1: 1,
-	n2: 2
-}
-array = ["+", 1,2];
-console.log(calculate(text));
 
-
-
-
-
-
-
-
-
-function add(args){
-	return args.n1+args.n2;
-}
-console.log("add({n1:3,n2:4})");
-console.log(add({n1:3,n2:4}));*/
 
 
 console.log("----------------------------------------");
