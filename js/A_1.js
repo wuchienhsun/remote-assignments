@@ -56,6 +56,7 @@ console.log("----------------------------------------");
 //     return this.firstName + " " + this.lastName;
 //   }
 // };
+
 console.log("A_2");
 function calculate(args) {
 		let result;
@@ -78,19 +79,8 @@ var o = {
 	[n2]: 2
 }
 console.log(calculate(o));
-var proof = [
-	{
-		op: "+"
-	},
-	{
-		n1: 1
-	},
-	{
-		n2: 2
-	}
-];
-var submit = proof[0].op, proof[1].n1, proof[2].n2;
-console.log(calculate(submit));
+
+
 class Num {
 	constructor(op, n1, n2) {
 		this.op = op;
@@ -101,7 +91,6 @@ class Num {
 
 const ans = new Num ('+', 7,2);
 console.log(calculate(ans));
-
 
 
 console.log("----------------------------------------");
