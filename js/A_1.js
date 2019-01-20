@@ -56,7 +56,6 @@ console.log("----------------------------------------");
 //     return this.firstName + " " + this.lastName;
 //   }
 // };
-
 console.log("A_2");
 function calculate(args) {
 		let result;
@@ -77,33 +76,15 @@ var text = {
   n2: 3
 };
 console.log(calculate(text));
-/*
-var text2 = {
-	op: 0,
-	n1: 1,
-	n2: 2
+var prop = 'op';
+var n1 = 'n1';
+var n2 = 'n2';
+var o = {
+	[prop]: "+",
+	[n1]: 1,
+	[n2]: 2
 }
-array = ["+", 1,2];
-console.log(calculate(text));
-
-var foo = {
-  bar: ['foo', 'bar', 'baz']
-};
-
-// access
-foo.bar[2]; // will give you 'baz'
-
-
-
-
-
-
-
-function add(args){
-	return args.n1+args.n2;
-}
-console.log("add({n1:3,n2:4})");
-console.log(add({n1:3,n2:4}));*/
+console.log(calculate(o));
 
 
 console.log("----------------------------------------");
