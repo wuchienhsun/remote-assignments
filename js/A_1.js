@@ -69,13 +69,6 @@ function calculate(args) {
 		return result;
 }
 
-
-var text = {
-  op: "+",
-  n1: 1,
-  n2: 3
-};
-console.log(calculate(text));
 var prop = 'op';
 var n1 = 'n1';
 var n2 = 'n2';
@@ -85,6 +78,30 @@ var o = {
 	[n2]: 2
 }
 console.log(calculate(o));
+var proof = [
+	{
+		op: "+"
+	},
+	{
+		n1: 1
+	},
+	{
+		n2: 2
+	}
+];
+var submit = proof[0].op, proof[1].n1, proof[2].n2;
+console.log(calculate(submit));
+class Num {
+	constructor(op, n1, n2) {
+		this.op = op;
+		this.n1 = n1;
+		this.n2 = n2;
+	}
+}
+
+const ans = new Num ('+', 7,2);
+console.log(calculate(ans));
+
 
 
 console.log("----------------------------------------");
