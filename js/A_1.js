@@ -86,12 +86,7 @@ var text2 = {
 array = ["+", 1,2];
 console.log(calculate(text));
 
-var foo = {
-  bar: ['foo', 'bar', 'baz']
-};
 
-// access
-foo.bar[2]; // will give you 'baz'
 
 
 
