@@ -97,21 +97,20 @@ console.log("----------------------------------------");
 
 //A_3
 // args = JSON.stringify(args)
-
 console.log("A_3");
 var avgpric;
-var a;
 var avgprice = 0;
+
 function avg(data){
-	for (var i = 0; i < a.products.length; i++) {
-		var avgprices = parseInt(a.products[i].price);
+	for (var i = 0; i < data.products.length; i++) {
+		var avgprices = parseInt(data.products[i].price);
 		avgprice += avgprices;
 	}
-	avgpric = avgprice/a.products.length;
+	avgpric = avgprice/data.products.length;
 	console.log(avgpric);
 }
 
-avg(a = {
+avg({
 	size: 3,
 	products: [
 		{
